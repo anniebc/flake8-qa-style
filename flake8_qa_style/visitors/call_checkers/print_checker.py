@@ -3,8 +3,8 @@ from typing import List
 
 from flake8_plugin_utils import Error
 
-from flake8_2gis_style.errors import Print
-from flake8_2gis_style.visitors.function_call_visitor import (
+from flake8_qa_style.errors import Print
+from flake8_qa_style.visitors.function_call_visitor import (
     Checker,
     FunctionCallVisitor
 )

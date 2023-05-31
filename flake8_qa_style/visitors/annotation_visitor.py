@@ -2,8 +2,8 @@ import re
 import ast
 from typing import Union
 
-from flake8_2gis_style.errors import ArgAnnotationMissing, ReturnAnnotationMissing
-from flake8_2gis_style.visitors._visitor_with_filename import VisitorWithFilename
+from flake8_qa_style.errors import ArgAnnotationMissing, ReturnAnnotationMissing
+from flake8_qa_style.visitors._visitor_with_filename import VisitorWithFilename
 
 
 class AnnotationVisitor(VisitorWithFilename):

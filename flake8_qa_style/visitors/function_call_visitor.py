@@ -2,7 +2,7 @@ import ast
 from abc import ABC, abstractmethod
 from typing import List, Type
 
-from flake8_2gis_style.visitors._visitor_with_filename import VisitorWithFilename
+from flake8_qa_style.visitors._visitor_with_filename import VisitorWithFilename
 
 
 class Checker(ABC):

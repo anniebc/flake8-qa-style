@@ -1,11 +1,11 @@
 from flake8_plugin_utils import assert_error, assert_not_error
 
-from flake8_2gis_style.config import DefaultConfig
-from flake8_2gis_style.errors import (
+from flake8_qa_style.config import DefaultConfig
+from flake8_qa_style.errors import (
     AssertSameObjectsForEquality,
     AssertWithConstant
 )
-from flake8_2gis_style.visitors import AssertVisitor
+from flake8_qa_style.visitors import AssertVisitor
 
 
 def test_assert_same_constants():

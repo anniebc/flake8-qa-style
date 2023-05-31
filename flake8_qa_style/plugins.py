@@ -5,7 +5,7 @@ from typing import Callable, List, Optional
 from flake8.options.manager import OptionManager
 from flake8_plugin_utils import Plugin, Visitor
 
-from flake8_2gis_style.visitors import (
+from flake8_qa_style.visitors import (
     AnnotationVisitor,
     AssertVisitor,
     FunctionCallVisitor,
@@ -37,8 +37,8 @@ class PluginWithFilename(Plugin):
         return visitor_cls(config=cls.config, filename=filename)
 
 
-class TwoGisStylePlugin(PluginWithFilename):
-    name = 'flake8_2gis_style'
+class QAStylePlugin(PluginWithFilename):
+    name = 'flake8_qa_style'
     version = '0.0.1'
     visitors = [
         AnnotationVisitor,
@@ -48,6 +48,9 @@ class TwoGisStylePlugin(PluginWithFilename):
 
     def __init__(self, tree: ast.AST, filename: str,  *args, **kwargs):
         super().__init__(tree, filename)
+
+    def foo(self, var):
+        return
 
     @classmethod
     def add_options(cls, option_manager: OptionManager):

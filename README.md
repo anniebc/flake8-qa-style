@@ -1,4 +1,4 @@
-# flake8-2gis-style
+# flake8-qa-style
 
 Плагин для flake8
 
@@ -10,7 +10,7 @@
 ## История
 ### Версия 0.0.1
 
-Валидация файлов по следующим [правилам](flake8_2gis_style/errors/errors.py)
+Валидация файлов по следующим [правилам](flake8_qa_style/errors/errors.py)
 
 Возможности конфигурации в `setup.cfg`:
 

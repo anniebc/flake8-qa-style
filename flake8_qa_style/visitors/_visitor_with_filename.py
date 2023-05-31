@@ -2,7 +2,7 @@ from typing import Optional
 
 from flake8_plugin_utils import Visitor
 
-from flake8_2gis_style.config import Config
+from flake8_qa_style.config import Config
 
 
 class VisitorWithFilename(Visitor):

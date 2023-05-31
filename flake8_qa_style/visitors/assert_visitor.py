@@ -1,10 +1,10 @@
 import ast
 
-from flake8_2gis_style.errors import (
+from flake8_qa_style.errors import (
     AssertSameObjectsForEquality,
     AssertWithConstant
 )
-from flake8_2gis_style.visitors._visitor_with_filename import VisitorWithFilename
+from flake8_qa_style.visitors._visitor_with_filename import VisitorWithFilename
 
 
 class AssertVisitor(VisitorWithFilename):
